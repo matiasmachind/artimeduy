@@ -37,10 +37,34 @@
         </nav>
         <!-- Masthead-->
         <header class="masthead">
+            <div class="slider-container slider-left">
+                <div class="swiper mySwiperLeft">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/img/artimed/Pinzas de disección.jpg" alt="Imagen 1"></div>
+                        <div class="swiper-slide"><img src="assets/img/artimed/Microtubo criovial.jpeg" alt="Imagen 2"></div>
+                        <div class="swiper-slide"><img src="assets/img/artimed/Porta objeto pintado.jpeg" alt="Imagen 3"></div>
+                        <div class="swiper-slide"><img src="assets/img/artimed/Pinzas de disección.jpg" alt="Imagen 4"></div>
+                    </div>
+                </div>
+            </div>
+        
+            <!-- Contenido Central -->
             <div class="container">
-                <div class="masthead-subheading" > ARTICULOS MEDICOS - INSUMOS DE LABORATORIO </div>
+                <div class="masthead-subheading">ARTICULOS MEDICOS - INSUMOS DE LABORATORIO</div>
                 <div class="masthead-heading text-uppercase">ARTIMED</div>
-                <a class="btn" href="#portfolio">Catalogo de productos</a>
+                <a class="btn" href="#portfolio">Catálogo de productos</a>
+            </div>
+        
+            <!-- Slider Derecho -->
+            <div class="slider-container slider-right">
+                <div class="swiper mySwiperRight">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide"><img src="assets/img/artimed/Porta objeto pintado.jpeg" alt="Imagen 5"></div>
+                        <div class="swiper-slide"><img src="assets/img/artimed/Microtubo criovial.jpeg" alt="Imagen 6"></div>
+                        <div class="swiper-slide"><img src="assets/img/artimed/Porta objeto pintado.jpeg" alt="Imagen 7"></div>
+                        <div class="swiper-slide"><img src="assets/img/artimed/Pinzas de disección.jpg" alt="Imagen 8"></div>
+                    </div>
+                </div>
             </div>
         </header>
      
@@ -459,6 +483,31 @@
         <!-- * *                               SB Forms JS                               * *-->
         <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
         <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
-        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+       
     </body>
+    <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+<script>
+    var swiperLeft = new Swiper(".mySwiperLeft", {
+        direction: "vertical",
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+    });
+
+    var swiperRight = new Swiper(".mySwiperRight", {
+        direction: "vertical",
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false,
+        },
+    });
+</script>
+
 </html>

@@ -6,7 +6,7 @@
 //
 // Scripts
 // 
-
+<script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
 window.addEventListener('DOMContentLoaded', event => {
 
     // Navbar shrink function
@@ -57,3 +57,21 @@ window.addEventListener('DOMContentLoaded', event => {
         });
     });
  })
+
+ var swiperLeft = new Swiper(".mySwiperLeft", {
+    direction: "vertical",
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+});
+
+var swiperRight = new Swiper(".mySwiperRight", {
+    direction: "vertical",
+    loop: true,
+    autoplay: {
+        delay: 5000,
+        disableOnInteraction: false,
+    },
+});
